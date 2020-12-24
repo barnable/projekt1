@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    background: url(images/Rectangle\ 1.svg), url(images/Rectangle\ 2.svg);
+    background: url(Rectangle\ 1.svg), url(Rectangle\ 2.svg);
     background-repeat: no-repeat;
     background-color: #E5E5E5;
     margin: 0 auto;
