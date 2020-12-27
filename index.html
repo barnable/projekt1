@@ -72,8 +72,10 @@
             </section>
             <section class="notifications">
                 <div class="notifications--pop">
-                    <div id="amount" class="notifications--amount">1</div>
-                    <h1 id="h1">Unread notification</h1>
+                    <div class="amount">
+                        <div id="amount" class="notifications--amount">1</div>
+                        <h1 id="h1">Unread notification</h1>
+                    </div>
                     <button id="button" class="notifications--action">
                         <div class="circle1">
                         <div class="circle2"></div>
@@ -163,8 +165,11 @@
         var notification = document.getElementById("notifications");
         var changeAmount = document.getElementById("amount");
         var changeMessage = document.getElementById("h1");
+        var button = document.getElementById("button");
         notification.classList.add("hide");
-        getElementById(button);
+        button.classList.add("hide");
+        changeAmount.innerHTML = "0";
+        changeMessage.innerHTML= "You have no notifications"
         }
     </script>    
 </body>
