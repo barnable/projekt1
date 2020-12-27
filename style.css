@@ -94,6 +94,7 @@ main {
 
 
 .marketing{
+    margin-bottom:60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -435,4 +436,8 @@ color:red;
     margin-top:15px;
     font-size: 16px;
     font-family: arial;
+}
+
+.hide{
+    display:none;
 }
