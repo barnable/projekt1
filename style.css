@@ -178,6 +178,7 @@ main {
 .notifications{
     width:500px;
     margin:60px 0 50px 81px;
+    cursor:pointer;
 }
 
 .notifications--pop{
