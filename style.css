@@ -185,13 +185,16 @@ main {
     font-size: 18px;
     display:flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: space-between;
 
 }
 
+.amount{
+    display:flex;
+}
+
 .notifications h1{
-    margin:0 130px 0px 10px;
+    margin-left:10px;
     align-self: center;
 }
 
