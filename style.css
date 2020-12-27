@@ -178,12 +178,7 @@ main {
     width:500px;
     margin:60px 0 50px 81px;
 }
-.aside{
-    display:inline-block;
-}
-.notifications--off{
-    display:none;
-}
+
 .notifications--pop{
     margin-bottom:25px;
     font-size: 18px;
@@ -198,6 +193,7 @@ main {
     margin:0 130px 0px 10px;
     align-self: center;
 }
+
 .notifications--amount{
     width:35px;
     height:35px;
@@ -258,6 +254,7 @@ main {
 .notifications--message{
     background: url(Rectangle\ 13.svg);
     background-size: cover;
+    cursor:pointer;
     display:flex;
     position:relative;
 }
