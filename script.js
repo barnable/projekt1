@@ -1,30 +1,30 @@
-var notification = document.getElementById("notifications");
-var changeAmount = document.getElementById("amount");
-var changeMessage = document.getElementById("h1");
 var button = document.getElementById("button");
-var modalSwitch = document.querySelector('.modal');
-var backdrop = document.querySelector('.backdrop');
+var notification = document.getElementById("notifications");
+var amount = document.getElementById("amount");
+var h1 = document.getElementById("h1");
 var message=document.querySelector('.notifications--message');
+var modal = document.querySelector('.modal');
+var backdrop = document.querySelector('.backdrop');
 
 //dismiss notifications
-button.addEventListener("click", hide);
-function hide(){
+button.addEventListener("click", changeNotification);
+function changeNotification(){
 notification.classList.add("hide");
 button.classList.add("hide");
-changeAmount.innerHTML = "0";
-changeMessage.innerHTML= "You have no notifications"
+amount.innerHTML = "0";
+h1.innerHTML= "You have no notifications"
 }
 
 //show message box
 message.addEventListener("click", modal);
-function modal(){
+function showMessage(){
     backdrop.style.display="block";
-    modalSwitch.style.display="flex";
+    modal.style.display="flex";
 }
 
-//hide modal
+//hide message
 backdrop.addEventListener("click", close)
-function close(){
-    modalSwitch.style.display="none";
+function closeMessage(){
+    modal.style.display="none";
     backdrop.style.display="none";
 }
