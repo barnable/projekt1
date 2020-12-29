@@ -16,14 +16,14 @@ h1.innerHTML= "You have no notifications"
 }
 
 //show message box
-message.addEventListener("click", modal);
+message.addEventListener("click", showMessage);
 function showMessage(){
     backdrop.style.display="block";
     modal.style.display="flex";
 }
 
 //hide message
-backdrop.addEventListener("click", close)
+backdrop.addEventListener("click", closeMessage)
 function closeMessage(){
     modal.style.display="none";
     backdrop.style.display="none";
